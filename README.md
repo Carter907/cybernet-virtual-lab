@@ -8,6 +8,8 @@ I utilized the virtual box command line tool to set up a DHCP server in order to
 
 Once both boxes had been configured, I tested through connection with the `ping` command as well as `nmap`, started a python http server one and scanning for that open port from the other.
 
+![cybernet-diagram.png](assets/network-diagram.png)
+
 ### Configuration
 
 I used the following command to set up the dhcp server:
