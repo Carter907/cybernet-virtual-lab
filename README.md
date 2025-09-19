@@ -7,3 +7,10 @@ The internal network was set for these machines in order to isolate them from th
 I utilized the virtual box command line tool to set up a DHCP server in order to assign IP/4 addresses to the VMs.
 
 Once both boxes had been configured, I tested through connection with the `ping` command as well as `nmap`, started a python http server one and scanning for that open port from the other.
+
+### Configuration
+
+I used the following command to set up the dhcp server:
+```
+VBoxManage dhcpserver add --network=cybernet --server-ip=192.168.3.1 --netmask=255.255.255.0 --Lower-ip=192.168.3.2 --upper-ip=192.168.3.254 --Enable
+```
